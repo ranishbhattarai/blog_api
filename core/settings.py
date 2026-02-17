@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'accounts',
-    'blog',
+    'blogs',
 ]
 
 # Django REST Framework configuration
@@ -98,8 +98,21 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        #'ENGINE': 'django.db.backends.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'blog_db',
+
+        'USER': 'postgres',
+
+        'PASSWORD': 'qMADUOpvFGeZzuJekbTCLKsDqUPyGsZV',
+
+        'HOST': 'postgres.railway.internal',
+
+        'PORT': '5432',
+
     }
 }
 
