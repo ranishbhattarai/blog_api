@@ -96,25 +96,20 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+import os
+# this configuration uses PostgreSQL as the database backend. It specifies the database name, user, password, host, and port. Make sure to replace 'your_password' with the actual password for your PostgreSQL user.
 DATABASES = {
     'default': {
-
-        #'ENGINE': 'django.db.backends.sqlite3',
-
         'ENGINE': 'django.db.backends.postgresql',
-
         'NAME': 'blog_db',
-
         'USER': 'postgres',
-
-        'PASSWORD': 'qMADUOpvFGeZzuJekbTCLKsDqUPyGsZV',
-
-        'HOST': 'postgres.railway.internal',
-
+        'PASSWORD': 'your_password',
+        'HOST': 'localhost',
         'PORT': '5432',
-
     }
 }
+
+
 
 
 # Password validation
