@@ -53,7 +53,7 @@ blog/
 
 ### 5. Database
 
-- Used PostgreSQL (configurable for local or Railway hosting).
+- Used PostgreSQL.
 - Migration files provided in users/migrations/ and blogs/migrations/ (generated via makemigrations).
 - Ensured clean schema with minimal, required fields only.
 
@@ -69,7 +69,7 @@ blog/
 ### 1. Clone the Repository
 
 ```
-git clone <your-repo-url>
+git clone https://github.com/ranishbhattarai/blog_api/
 
 ```
 
