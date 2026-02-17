@@ -1,4 +1,4 @@
-# Backend Developer Intern – Technical Assignment: Role-Based Blog API
+# Role-Based Blog API
 
 ## Overview
 This project implements a Role-Based Blog API with authentication and authorization, as per the provided technical assignment requirements. The API uses JWT for authentication and enforces role-based access control (RBAC) for three roles: ADMIN (full CRUD access to all blogs), AUTHOR (CRUD on own blogs), and READER (view only published blogs).
